@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Сплавы по Клязьме</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@[version]/flexboxgrid2.css">
+    <script>
+        function initMap() {
+  const uluru = { lat: 56.192092, lng: 40.567576 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: uluru,
+  });
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+    </script>
+    
+    <link rel="stylesheet" href="../js/ui-components-master/itc-slider/itc-slider.css">
+    <!-- JavaScript -->
+    <script src="../js/ui-components-master/itc-slider/itc-slider.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="header">
+    <div class="header_logo">    
+        <a href="#">LOGO</a>
+    </div>
+    <nav class="nav">
+        <div class="nav_item">
+            <a href="#">Программа тура</a>
+        </div>
+        <div class="nav_item">   
+            <a href="#">Наша команда</a>
+        </div> 
+        <div class="nav_item"> 
+            <a href="#">Отзывы</a>
+        </div>
+        <div class="nav_item">
+            <a href="#">FAQ</a>
+        </div>
+        <div class="nav_item">
+            <a href="#">Контакты</a>
+        </div>   
+    </nav>
+</header>
+<div class="main_card">
+    <div class="text_card">
+        <h1 class="h1">Авторский тур <span>по Клязьме</span></h1>
+        <p class="p1">Получите максимум впечатлений от сплава по реке Клязьма вместе с опытной командой</p>
+        <a href="#"><button>Присоединиться</button></a>
+    </div>
+    <div class="main_image"></div>
+</div>
+<div class="wave">
+    <div class="wave_image">
+    <div class="container_wave">
+        <div class="wave_item">
+            <h1>3500</h1>
+            <p>туристов доверились нам в организации сплава их мечты и остались довольны</p>
+        </div>
+        <div class="wave_item">
+            <h1>42</h1>
+            <p>невероятных сплава организовано командой за прошлый год</p>
+        </div>
+        <div class="wave_item">
+            <h1>600+</h1>
+            <p>километров пройдено нашими байдарочниками по рекам России </p>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="map">
+    <div class="container_map">
+        <h1>Программа тура</h1>
+        <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    </div>
+    <div class="itc-slider" data-slider="itc-slider" class="carousel_main">
+      <div class="itc-slider">
+        <div class="itc-slider__wrapper">
+          <div class="itc-slider__items">
+            <div class="itc-slider__item">
+              <div class="carousel-item">
+                <h2>1 день</h2>
+                <h3>Владимир</h3>
+                <p>Начало нашего тура — встреча всех участников в городе Владимир. Недалеко от городского вокзала вас встретят инструкторы и все вместе на комфортабельном автобусе поедете в Боголюбово. Там, на берегу реки Клязьма, начнётся наше путешествие.</p>
+                <p class="p_second">В первый день будет проведён инструктаж, построен первый лагерь, разделён первый ужин новой командой. Ночь пройдёт в новопостроенном лагере.</p>
+            </div>
+          </div>
+            <div class="itc-slider__item">
+              <div class="carousel-item">
+                <h2>2 день</h2>
+                <h3>Владимир</h3>
+                <p>Начало нашего тура — встреча всех участников в городе Владимир. Недалеко от городского вокзала вас встретят инструкторы и все вместе на комфортабельном автобусе поедете в Боголюбово. Там, на берегу реки Клязьма, начнётся наше путешествие.</p>
+            </div>
+            </div>
+            <div class="itc-slider__item">
+              <div class="carousel-item">
+                <h2>3 день</h2>
+                <h3>Владимир</h3>
+                <p>Начало нашего тура — встреча всех участников в городе Владимир. Недалеко от городского вокзала вас встретят инструкторы и все вместе на комфортабельном автобусе поедете в Боголюбово. Там, на берегу реки Клязьма, начнётся наше путешествие.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+        <button class="itc-slider__btn itc-slider__btn_prev"></button>
+        <button class="itc-slider__btn itc-slider__btn_next"></button>
+      </div>
+</div>
+</div>
+<div class="staff">
+  <h1>Наша команда</h1>
+  <div class="container">
+    <div class="staff_card">
+      <div class="staff_image_1"></div>
+      <div class="staff_desc">
+        <h2>Никита</h2>
+        <p>Создатель тура. Опытный путешественник, занимается организацией сплавов более 10 лет.</p>
+         <p class="p_second">Своей миссией видит заботу о каждом члене сплава.</p>
+      </div>
+    </div>
+    <div class="staff_card">
+      <div class="staff_image_2"></div>
+      <div class="staff_desc">
+        <h2>Федор Михайлович</h2>
+        <p >Специалист по байдаркам высшей категории.</p>
+         <p class="p_second">Впервые сплавился по Ангаре в 12 лет. С тех пор считает это своим предназначением.</p>
+      </div>
+    </div>
+    <div class="staff_card">
+      <div class="staff_image_3"></div>
+      <div class="staff_desc">
+        <h2>Марк</h2>
+        <p>Имеет опыт сплавов более 6 лет, профессиональный турист.</p>
+         <p class="p_second">Не мыслит свою жизнь без мороженного и туризма.</p>
+      </div>
+    </div>
+    <div class="staff_card">
+      <div class="staff_image_4"></div>
+      <div class="staff_desc">
+        <h2>Вероника</h2>
+        <p>Новичок команды с удивительным опытом — занимается сплавами с детства со своим дядей — чемпионом края по байдарочному спорту.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="faq">
+  <div class="faq_content">
+      <section class="section__qanda">
+         <div class="text__wrapper">
+            <h2>Часто задаваемые вопросы</h2>
+        </div>
+        
+            <div class="qa__wrapper">
+                <p>Почему именно мы?</p>
+                <svg style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                        fill="#9F7AEA" />
+                </svg>
+                <span class="span" style="max-height: 60px">This FAQ section is now in the expanded state, so you see
+                    how
+                    it
+                    looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales.</span>
+            </div>
+    
+            <div class="qa__wrapper">
+                <p>Требуется ли иметь с собой снаряжение?</p>
+                <svg style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                        fill="#9F7AEA" />
+                </svg>
+                <span class="span" style="max-height: 0">This FAQ section is now in the expanded state, so you see how
+                    it
+                    looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales.</span>
+            </div>
+    
+            <div class="qa__wrapper">
+                <p>Какова протяжённость маршрута?</p>
+                <svg style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                        fill="#9F7AEA" />
+                </svg>
+                <span class="span" style="max-height: 0">This FAQ section is now in the expanded state, so you see how
+                    it
+                    looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales.</span>
+            </div>
+    
+            <div class="qa__wrapper">
+                <p>Есть ли требования к физической форме участников?</p>
+                <svg style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                        fill="#9F7AEA" />
+                </svg>
+                <span class="span" style="max-height: 0">This FAQ section is now in the expanded state, so you see how
+                    it
+                    looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales.</span>
+            </div>
+        
+    
+       
+    
+            <div class="qa__wrapper">
+                <p>Что входит в стоимость тура?</p>
+                <svg style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                        fill="#9F7AEA" />
+                </svg>
+                <span class="span" style="max-height: 0">This FAQ section is now in the expanded state, so you see how
+                    it
+                    looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales.</span>
+            </div>
+    
+            <div class="qa__wrapper">
+                <p>Что если в пути будут проблемы со здоровьем?</p>
+                <svg style="transition: 0.3s" id="btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.9 9.1999C16.5 8.7999 15.9 8.7999 15.5 9.1999L12 12.6999L8.49999 9.1999C8.09999 8.7999 7.49999 8.7999 7.09999 9.1999C6.69999 9.5999 6.69999 10.1999 7.09999 10.5999L11.3 14.7999C11.5 14.9999 11.7 15.0999 12 15.0999C12.3 15.0999 12.5 14.9999 12.7 14.7999L16.9 10.5999C17.3 10.1999 17.3 9.5999 16.9 9.1999Z"
+                        fill="#9F7AEA" />
+                </svg>
+                <span class="span" style="max-height: 0">This FAQ section is now in the expanded state, so you see how
+                    it
+                    looks. Rhoncus sed facilisi sed amet. Tristique commodo sodales.</span>
+            </div>
+           
+        
+    </section>
+    <div class="form">
+         <h2>Остались вопросы?</h2>
+         <span class="required_notification">Оставьте ваш номер телефона и организаторы перезвонят</span>
+        <input type="text" placeholder="Имя" name="name" />
+        <input type="text" placeholder="Номер телефона" name="phone" />
+        <button class="submit" type="submit"><p>Свяжитесь со мной</p></button>
+
+    </div>  
+  </div>
+  
+</div>
+<div class="review">
+  <h1>Отзывы участников предыдущих сплавов</h1>
+    <div class="review_cards">
+      <div class="review_card">
+        <div class="review_card_header">
+          <p>Спасибо, все отлично!</p>
+        </div>
+        <div class="review_card_footer">
+          <p>Марина</p>
+          <p>24.05.2021</p>
+        </div>
+      </div>
+      <div class="review_card">
+        <div class="review_card_header">
+          <p>Очень понравился сплав, все прошло чудесно, никто не разбился, и теперь я умею плавать! Спасибо!</p>
+        </div>
+        <div class="review_card_footer">
+          <p>Елена</p>
+          <p>24.06.2022</p>
+        </div>
+      </div>
+      <div class="review_card">
+        <div class="review_card_header">
+          <p>Благодарю организаторов тура за невероятные выходные с семьёй! Ездили в сплав вместе с мужем и сыном-школьни…
+            Читать дальше</p>
+        </div>
+        <div class="review_card_footer">
+          <p>Марина</p>
+          <p>24.05.2021</p>
+        </div>
+      </div>
+    </div>
+    <button class="all_reviews" ><p>Все отзывы</p></button>
+</div>
+  <div class="network">
+    <div class="map_image"></div>
+    <div class="network_card">
+      <h1>Контакты</h1>
+      <h2>Адрес</h2>
+      <p>116245 г. Владимир, ул. Ледяная гора, д. 46, корп. 1</p>
+      <h2>Контактный номер</h2>
+      <p>+7 904 653-71-78</p>
+      <div class="icons">
+        <div class="inst"></div>
+        <div class="tg"></div>
+        <div class="fb"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="header_logo">    
+      <a href="#">LOGO</a>
+  </div>
+  <nav class="nav">
+    <div class="nav_item">
+        <a href="#">Программа тура</a>
+    </div>
+    <div class="nav_item">   
+        <a href="#">Наша команда</a>
+    </div> 
+    <div class="nav_item"> 
+        <a href="#">Отзывы</a>
+    </div>
+    <div class="nav_item">
+        <a href="#">FAQ</a>
+    </div>
+    <div class="nav_item">
+        <a href="#">Контакты</a>
+    </div>   
+</nav>
+  </div>
+  <div class="copy">
+    <div class="copy_item">    
+      <a href="#">© 2022</a>
+  </div>
+  <nav class="copy2">
+    <div class="copy_item">
+        <a href="#">Политика конфиденциальности</a>
+    </div>
+    <div class="copy_item">   
+        <a href="#">Согласие на обработку персональных данных</a>
+    </div>  
+</nav>
+  </div>
+</div>
+<script src="../index/script.js"></script>
+</body>
+</html>
+
+
+
+
